@@ -40,16 +40,13 @@ console.log(EtaPasseggero);
 if(EtaPasseggero < 18){
   PrezzoFinale = (PrezzoNonScontato * 0.80).toFixed(2);
   console.log(PrezzoFinale);
-  document.getElementById("messaggio").innerHTML = 'Sei minorenne. Hai diritto ad uno sconto del 20%.<br>-Il prezzo del biglietto senza sconti:'+PrezzoNonScontato+'<br>-il prezzo del biglietto scontato e:'+PrezzoFinale+'<br>-km da percorrere:'+NumeroChilometri+'<br>-Prezzo al km:'+Tar;
+  document.getElementById("messaggio").innerHTML = 'Sei minorenne. Hai diritto ad uno sconto del 20%.<br>-Il prezzo del biglietto senza sconti:'+PrezzoNonScontato+'&euro;<br>-il prezzo del biglietto scontato e:'+PrezzoFinale+'&euro;<br>-km da percorrere:'+NumeroChilometri+'<br>-Prezzo al km:'+Tar+'&euro;';
 }else if(EtaPasseggero > 65){
   PrezzoFinale = (PrezzoNonScontato * 0.60).toFixed(2);
   console.log(PrezzoFinale);
-  document.getElementById("messaggio").innerHTML = 'Sei over65. Hai diritto ad uno sconto del 40%.<br>-Il prezzo del biglietto senza sconti:'+PrezzoNonScontato+'<br>-il prezzo del biglietto scontato :'+PrezzoFinale+'<br>-km da percorrere:'+NumeroChilometri+'<br>-Prezzo al km:'+Tar;
+  document.getElementById("messaggio").innerHTML = 'Sei over65. Hai diritto ad uno sconto del 40%.<br>-Il prezzo del biglietto senza sconti:'+PrezzoNonScontato+'&euro;<br>-il prezzo del biglietto scontato :'+PrezzoFinale+'&euro;<br>-km da percorrere:'+NumeroChilometri+'<br>-Prezzo al km:'+Tar+'&euro;';
 }else{
   PrezzoFinale = (PrezzoNonScontato).toFixed(2);
   console.log(PrezzoFinale);
-  document.getElementById("messaggio").innerHTML = 'Non hai diritto ad uno sconto.<br>-Il prezzo del biglietto :'+PrezzoNonScontato+'<br>-Il prezzo del biglietto scontato :'+PrezzoFinale+'<br>-km da percorrere:'+NumeroChilometri+'<br>-Prezzo al km:'+Tar;
+  document.getElementById("messaggio").innerHTML = 'Non hai diritto ad uno sconto.<br>-Il prezzo del biglietto :'+PrezzoNonScontato+'&euro;<br>-Il prezzo del biglietto scontato :'+PrezzoFinale+'&euro;<br>-km da percorrere:'+NumeroChilometri+'<br>-Prezzo al km:'+Tar+'&euro;';
 }
-
-
-
